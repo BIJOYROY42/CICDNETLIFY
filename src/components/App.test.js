@@ -7,3 +7,8 @@ test('renders the user name', () => {
     const nameElement = screen.getByText(/Bijoy Roy/i);
     expect(nameElement).toBeInTheDocument();
 });
+test('renders the course name', () => {
+    render(<App />);
+    const courseElement = screen.getByText(/Enterprise Computing/i);
+    expect(courseElement).toBeInTheDocument();
+});
